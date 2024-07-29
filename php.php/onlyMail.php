@@ -47,24 +47,3 @@ try {
     return; 
 }
 ?>
-
-<!-- api key -->
-<!-- re_GjGcnRed_2we6AG2bXfCrLe9R4CxFgS2c -->
-
-<!-- $resend = Resend::client('re_GjGcnRed_2we6AG2bXfCrLe9R4CxFgS2c');
-
-
-try {
-    $result = $resend->sendEmail([
-        'from' => 'TG Group <comex@tg-logistic.com>',
-        'to' => [$email],
-        'subject' => 'Nueva Lead',
-        'html' => $htmlContent,
-    ]);
-
-    echo json_encode(['status' => 'success', 'message' => 'Correo enviado con éxito.']);
-
-} catch (\Exception $e) {
-    echo json_encode(['status' => 'error', 'message' => $e->getMessage()]);
-    return;
-} -->
