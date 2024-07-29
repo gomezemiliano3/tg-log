@@ -9,7 +9,7 @@ if (!$email) {
     return;
 }
 
-$resend = Resend::client('re_GjGcnRed_2we6AG2bXfCrLe9R4CxFgS2c');
+$resend = Resend::client('re_FHHGotN5_8SwkbhLE9c7seKGCx3rCr7kE');
 
 // URL del logo
 $logoUrl = "https://tg-logistic.com/img/tg-full-logo.svg";
