@@ -99,13 +99,10 @@
 
                 <div class="mail_wrapper">
     <form action="https://formspree.io/f/xyzgeavl" method="POST">
-        <input type="email" name="email" placeholder="Enter your Email" required>
-        <button type="submit">Start Now</button>
+        <input type="email" class="previsory_email" name="email" id="email-form" placeholder="Enter your Email" required>
+        <button style="margin: 0 auto;" class="btn btn-light email_button" id="sendEmailBtn" type="submit">Start Now</button>
     </form>
-                    <input class="previsory_email" id="email-form" type="email" placeholder="Enter your Email">
-    <button type="submit" style="margin: 0 auto;" class="btn btn-light email_button" id="sendEmailBtn">
-        Start Now <span class="material-symbols-outlined">trending_flat</span>
-    </button>
+                    
 </div>
 <p id="responseMessage"></p>
                 <p class="mail_disclaimer">By filling this form you are accepting the <a href="#disclaimer"
