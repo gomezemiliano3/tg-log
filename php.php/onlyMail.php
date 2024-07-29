@@ -34,7 +34,7 @@ $htmlContent = '
 
 try {
     $result = $resend->sendEmail([
-        'from' => 'TG Group <comex@tg-logistic.com>',
+        'from' => 'TG Group <info@tg-logistic.com>',
         'to' => [$email],
         'subject' => 'Nueva Lead',
         'html' => $htmlContent,
