@@ -1,0 +1,143 @@
+#static-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    background-color: #0000004d;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    visibility: visible;
+    /* Siempre visible, pero completamente transparente cuando está "oculto" */
+    opacity: 1;
+    /* Inicia completamente transparente */
+    transition: opacity 0.2s ease;
+    /* Transición suave para la opacity */
+    pointer-events: none;
+    /* Evita la interacción cuando el modal está "oculto" */
+}
+
+#static-modal.show {
+    opacity: 1;
+    /* Opaco cuando el modal está "activo" */
+    pointer-events: auto;
+    /* Restaura la interacción */
+}
+
+.modal-dialog {
+    background-color: #fff;
+    height: fit-content;
+    padding: 50px 0;
+    width: 100%;
+    max-width: 1000px !important;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-beyma-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    border: 1px solid #f2f2f6;
+    margin-bottom: 40px;
+    background: rgb(238, 238, 238);
+    background: linear-gradient(360deg, rgba(238, 238, 238, 1) 0%, rgba(255, 255, 255, 1) 60%);
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content {
+    width: 85%;
+    margin: 0;
+    padding: 0 40px;
+    border: 0 !important;
+}
+
+.modal-title {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: left;
+}
+
+.modal-header{
+    border-bottom: 0 !important;
+}
+
+.modal-body {
+    margin-top: 0;
+}
+
+.modal-footer {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    border-top: 0 !important;
+}
+
+.btn {
+    height: 3rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.btn-close {
+    background-color: #000 !important;
+    width: 20%;
+    margin-right: 10px;
+    color: #fff !important;
+    padding: 0;
+    margin-right: 20px !important;
+    box-sizing: border-box !important;
+    opacity: 1 !important;
+}
+
+.btn-send {
+    background-color:#86543d !important;
+    width: 30%;
+    color: #fff !important;
+}
+
+
+
+.input-modal {
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 15px;
+
+}
+
+.modal-input::placeholder {
+    font-weight: 300;
+}
+
+.modal-input {
+    font-family: inherit;
+    line-height: 1;
+    margin: 0 auto 1.5em;
+    display: block;
+    width: 100%;
+    transition: all 120ms;
+    font-weight: normal;
+    padding: .75em;
+    border-radius: .375em;
+    border: 1px solid #ddd;
+    background-color: lighten(#efefef, 1%);
+}
+
+.modal-input:focus {
+    border-color: #501fff !important;
+    outline: 3px solid rgba(#501fff, 0.25);
+}
+
+.form_section{
+    background-image: none !important;
+    height: fit-content !important;
+}

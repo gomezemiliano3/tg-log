@@ -1,0 +1,152 @@
+/* // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
+
+
+@media (min-width: 1400px) {
+
+}
+
+@media (max-width: 1200px) {
+
+    .navbar{
+        width: 70%;
+    }
+    .service-column{
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .accordion{
+        width: 100%;
+    }
+    .navbar-toggler{
+        display: none;
+    }
+    #nocrop{
+        flex-wrap: initial;
+    }
+    .navbar-nav{
+        padding: 0;
+        width: 100%;
+    }
+    .navbar-brand{
+        display: flex !important;
+    }
+    .routes_wrapper{
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .accordion{
+        width: 100%;
+    }
+
+    #sixt_section{
+        height: 60vh;
+    }
+    .navbar{
+        width: 90%;
+    }
+    .previsory_email{
+        width: 60%;
+    }
+    .mail_disclaimer{
+        font-size: 10px;
+    }
+    .a_terms{
+        font-size: 10px !important;
+    }
+    #desktop-presentation{
+        display: none;
+    }
+    #mobile-presentation{
+        display: block;
+    }
+    .wrapper-map{
+        width: 100%;
+        max-width: 100% !important;
+    }
+    .wrapper-details-routes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0;
+    }
+    .route-details{
+        width: 100%;
+        margin-top: 10px !important;
+    }
+    #home{
+        background-image: url(/img/main-hero-tablets.png);
+    }
+}
+
+
+@media (max-width: 576px) {
+    #main-title{
+        font-size: 45px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    h2{
+        font-size: 35px;
+    }
+    #sixt_section{
+        height: 80vh;
+        width: 100%;
+    }
+    .wrapper-sixt-section{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .navbar-brand {
+        display: none !important;
+    }
+    #nocrop{
+        padding-left: 20px;
+    }
+
+    #contact_button_nav{
+        width: fit-content;
+    }
+
+    .contact-modal{
+        width: 100px;
+        width: fit-content;
+        padding: 0 10px;
+    }
+    #contact-p-button{
+        font-size:14px;
+        width: fit-content;
+    }
+    #crop_arrow{
+        display: none;
+    }
+
+    #home{
+        background-image: url(/img/main-hero-phone.png);
+    }
+}
+
+@media (max-width: 359px) {
+    #nocrop{
+        padding-left: 0;
+    }
+}

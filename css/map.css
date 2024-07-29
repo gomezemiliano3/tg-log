@@ -1,0 +1,296 @@
+@font-face {
+    font-family: Helvetica;
+    src: url(/font/HelveticaNowDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: Helvetica Bold;
+    src: url(/font/HelveticaNowDisplay-Medium.ttf);
+    font-weight: bold;
+}
+
+
+a {
+    font-size: 14px !important;
+    font-family: Helvetica;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+:root {
+    --azul: #014768;
+    --gris: #141623;
+    --fondo: #86543d;
+    --negro: #000;
+    --blanco: #fff;
+}
+
+p {
+    letter-spacing: 2px;
+    color: var(--blanco);
+    height: fit-content;
+    font-size: 18px;
+    font-family: Helvetica;
+}
+
+h1 {
+    letter-spacing: 2px;
+    color: var(--blanco);
+    height: fit-content;
+    font-size: 60px;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+h2 {
+    letter-spacing: 2px;
+    color: #000;
+    height: fit-content;
+    font-size: 45px;
+    text-align: center;
+    font-family: Helvetica;
+    
+}
+
+h4 {
+    letter-spacing: 0.5px;
+    color: #000;
+    height: fit-content;
+    font-size: 22px;
+    text-align: center;
+    font-family: Helvetica Bold;
+    font-weight: 500;
+}
+
+h5{
+    color: #fff;
+    letter-spacing: 0.5px;
+    font-family: Helvetica;
+}
+
+
+h6 {
+    letter-spacing: 2px;
+    color: var(--blanco);
+    font-family: sans-serif;
+    /* Tipo de fuente para los títulos */
+
+    height: 25px;
+
+}
+
+html, body {
+    height: 100%;
+    background-color: #141623;
+}
+body {
+    background-color: #141623;
+}
+
+.map-wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.map-container {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+.map-container img {
+    width: 100%;
+}
+.map-container .point {
+    cursor: pointer;
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    will-change: transform, box-shadow;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 rgba(0, 172, 193, 0.4);
+    animation: pulse 3s infinite;
+}
+.map-container .point:focus {
+    animation: none;
+    transform: translate(-50%, -50%) scale3D(1.35, 1.35, 1);
+}
+
+
+.map-container .venezuela {
+    top: 54%;
+    left: 24%;
+}
+.map-container .brasil {
+    top: 64%;
+    left: 28%;
+}
+.map-container .uruguay {
+    top: 83%;
+    left: 28%;
+}
+.map-container .colombia {
+    top: 55%;
+    left: 21%;
+}
+.map-container .panama {
+    top: 51%;
+    left: 18%;
+}
+.map-container .usa {
+    top: 38%;
+    left: 20%;
+}
+.map-container .usa {
+    top: 26%;
+    left: 20%;
+}
+.map-container .arabia {
+    top: 40%;
+    left: 53%;
+}
+.map-container .italy {
+    top: 30%;
+    left: 50%;
+}
+.map-container .rusia {
+    top: 16%;
+    left: 67%;
+}
+.map-container .asia {
+    top: 32%;
+    left: 72%;
+}
+.map-container .japon {
+    top: 34%;
+    left: 86%;
+}
+.map-container .australia {
+    top: 72%;
+    left: 86%;
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(177, 177, 177, 0.5)
+   }
+    70% {
+        box-shadow: 0 0 0 25px rgba(55, 55, 55, 0);
+   }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 172, 193, 0);
+   }
+}
+
+
+/* ROUTES WRAPPER */
+.routes_wrapper{
+    width: 80%;
+    margin: 0 auto;
+    height: fit-content;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 100px;
+    max-height: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    display: none;
+
+}
+.routes_wrapper.open {
+    max-height: 1000px; /* o un valor suficientemente grande para acomodar tu contenido */
+}
+
+.button{
+    border: 0;
+    background-color: transparent;
+}
+
+.point.selected {
+    background-color: #86543d;
+    color: white;
+  }
+
+.routes_wrapper_h2{
+    color: #000;
+    margin-top: 0;
+  }
+
+.wrapper-routes{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.route-details{
+    display: flex;
+    width: 50%;
+    height: 3rem;
+    background-color: #fff;
+    margin: 0 10px;
+    padding: 0 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-details-routes{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.route-flag{
+    width: 30px;
+    padding: 0 5px;
+}
+
+.country-route{
+    color: #000;
+    font-family: Helvetica;
+    margin: 0;
+    width: fit-content;
+}
+
+.route-divider{
+    width:-webkit-fill-available;
+    margin: 0 10px;
+    height: 1px;
+}
+
+.start_route_button{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.request_price{
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 0;
+    border-radius: 10px;
+    height: 4rem;
+    padding: 0 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Helvetica;
+}
+.arrow{
+    margin-left: 30px;
+}

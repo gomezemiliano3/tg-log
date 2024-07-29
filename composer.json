@@ -1,0 +1,6 @@
+{
+    "require": {
+        "daniel-zahariev/php-aws-ses": "^0.9.5",
+        "resend/resend-php": "^0.1.0"
+    }
+}
