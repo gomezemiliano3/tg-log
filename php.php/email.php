@@ -12,7 +12,7 @@ if(!$name || !$email || !$phone || !$leadSource){
   return;
 }
 
-$resend = Resend::client('re_R6em3QcM_CAwWUCFsssAFkcKTm9c4Sr3H');
+$resend = Resend::client('re_FHHGotN5_8SwkbhLE9c7seKGCx3rCr7kE');
 
 try {
     $result = $resend->emails->send([
