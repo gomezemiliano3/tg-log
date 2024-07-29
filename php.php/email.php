@@ -16,8 +16,8 @@ $resend = Resend::client('re_R6em3QcM_CAwWUCFsssAFkcKTm9c4Sr3H');
 
 try {
     $result = $resend->emails->send([
-        'from' => 'Agenciadores <info@beymalogistica.com>',
-        'to' => ['info@beymalogistica.com'],
+        'from' => 'TG Logistic <info@tg-logistic.com>',
+        'to' => ['info@tg-logistic.com'],
         'subject' => 'Nueva Lead',
         'html' => '<strong>Nombre</strong><p>'.$name.'</p><br><strong>Email</strong><p>'.$email.'</p><br><strong>Teléfono</strong><p>'.$phone.'</p><br><strong>Dónde nos conocio?</strong><p>'.$leadSource.'</p><br>',
     ]);
